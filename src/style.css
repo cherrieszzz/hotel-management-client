@@ -15,9 +15,20 @@ a {
   text-decoration: none;
 }
 
+.container {
+  max-width: 70%;
+  margin: 0 auto;
+}
+
+.my-8 {
+  margin: 8px 0;
+}
+
 .el-footer {
   background-color: rgb(29,59,96);
 }
+
+
 /*.el-col {*/
 /*  border: blue solid 2px;*/
 /*}*/

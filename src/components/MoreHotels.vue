@@ -1,6 +1,9 @@
 <script>
+import MoreHotelCard from "./Cards/MoreHotelCard.vue";
+
 export default {
-  name: "MoreHotels"
+  name: "MoreHotels",
+  components: {MoreHotelCard}
 }
 </script>
 
@@ -13,9 +16,12 @@ export default {
 
         </div>
       </template>
-      <div>asdasd</div>
-      <div>asdasd</div>
-      <div>asdasd</div>
+      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+
       <div>...</div>
     </el-card>
   </div>

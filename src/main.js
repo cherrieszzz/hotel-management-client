@@ -11,6 +11,7 @@ import Sign from './pages/Sign.vue';
 import HotelDetail from './pages/HotelDetail.vue';
 import User from './pages/User.vue';
 import { createPinia } from "pinia";
+import MyBooking from "./pages/MyBooking.vue";
 
 const routes = [
   { path: "/", component: HelloWorld },
@@ -18,7 +19,8 @@ const routes = [
   {path:"/booking", component: Booking},
   {path:"/sign", component:Sign},
   {path:"/detail", component:HotelDetail},
-  {path:"/user", component:User}
+  {path:"/user", component:User},
+  {path:"/mybooking", component: MyBooking}
 ];
 
 // 创建路由实例时不需要使用 VueRouter 前缀

@@ -1,22 +1,33 @@
 <script setup>
 import { ref } from "vue";
 import {
-  Check,
-  Delete,
   Edit,
-  Message,
   Search,
-  Star,
 } from "@element-plus/icons-vue";
 
-const count = ref(0);
+import { useCounterStore } from '../stores/counter.js'
+const counter = useCounterStore()
+const value1 = ref('')
+
 </script>
 
 <template>
   <div class="home-banner">
-    <div class="home-banner-title">
-      Booking your hotel right now!!
+    <div class="home-banner-title" @click="counter.increment()">
+      Booking your hotel right now!! {{counter.count}}
     </div>
+    <el-row justify="center">
+      <el-col :span="8">
+        <el-date-picker
+            v-model="value1"
+            type="monthrange"
+            range-separator="To"
+            start-placeholder="Start month"
+            end-placeholder="End month"
+        />
+      </el-col>
+
+    </el-row>
     <el-row class="home-banner-row">
         <router-link to="/booking" >
           <el-button :icon="Search" circle class="home-banner-row-search" />
@@ -30,16 +41,10 @@ const count = ref(0);
 </template>
 
 <style scoped>
-.read-the-docs {
-  color: #888;
-}
-
 
 .home-banner {
   padding: 70px 0;
   min-height: 70vh;
-
-  font-family: "Segoe UI Light"
 }
 
 .home-banner-title {
@@ -67,4 +72,6 @@ const count = ref(0);
   height: 10rem;
   font-size: 3rem;
 }
+
+
 </style>

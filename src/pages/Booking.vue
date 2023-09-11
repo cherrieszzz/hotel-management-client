@@ -1,6 +1,6 @@
 <script>
 import SearchBar from '../components/SearchBar.vue';
-import HotelCard from '../components/HotelCard.vue';
+import HotelCard from '../components/Cards/HotelCard.vue';
 
 export default {
     data() {
@@ -14,27 +14,9 @@ export default {
         <SearchBar />
 
       <el-row >
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
-
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
-
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
-
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
-        <el-col :span="6">
-          <HotelCard />
-        </el-col>
+          <el-col v-for="i in [1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1]" :span="6">
+            <HotelCard />
+          </el-col>
       </el-row>
 
     </div>
