@@ -1,3 +1,9 @@
+<script setup>
+import {useUserStore} from '../stores/user'
+
+const user = useUserStore()
+</script>
+
 <template>
   <div class="navbar">
     <el-row align="middle" class="navbar-content">
@@ -34,15 +40,7 @@
   </div>
 </template>
 
-<script setup>
-import {useUserStore} from '../stores/user'
-
-const user = useUserStore()
-
-</script>
-
 <style>
-
 .navbar {
   background-color: rgb(29, 59, 96);
 }
@@ -57,6 +55,5 @@ const user = useUserStore()
   display: flex;
   justify-content: space-between;
 }
-
 </style>
   

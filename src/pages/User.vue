@@ -9,8 +9,8 @@
         <div class="avatar">
           <el-image
               class="avatar-image"
-              src="https://via.placeholder.com/150"
               fit="cover"
+              src="https://via.placeholder.com/150"
           ></el-image>
         </div>
       </el-col>
@@ -22,20 +22,20 @@
         <!-- 用户信息 -->
         <div class="user-info">
           <div class="user-location">
-              <el-button type="warning" @click="logout()">登出</el-button>
+            <el-button type="warning" @click="logout()">登出</el-button>
           </div>
         </div>
 
         <el-descriptions
 
-            direction="vertical"
             :column="4"
             :size="size"
             border
+            direction="vertical"
         >
-          <el-descriptions-item label="用户名">{{user.username}}</el-descriptions-item>
-          <el-descriptions-item label="email">{{user.email}}</el-descriptions-item>
-          <el-descriptions-item label="地点" :span="2">Suzhou</el-descriptions-item>
+          <el-descriptions-item label="用户名">{{ user.username }}</el-descriptions-item>
+          <el-descriptions-item label="email">{{ user.email }}</el-descriptions-item>
+          <el-descriptions-item :span="2" label="地点">Suzhou</el-descriptions-item>
 
         </el-descriptions>
       </el-col>

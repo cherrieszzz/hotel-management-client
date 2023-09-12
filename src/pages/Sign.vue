@@ -4,12 +4,12 @@
       <h2 class="auth-title">{{ activeTab === 'login' ? '登录' : '注册' }}</h2>
       <el-tabs v-model="activeTab" type="border-card">
         <el-tab-pane label="登录" name="login">
-          <el-form ref="loginForm" :model="loginForm" label-width="80px" class="auth-form">
+          <el-form ref="loginForm" :model="loginForm" class="auth-form" label-width="80px">
             <el-form-item label="用户名" prop="username">
               <el-input v-model="loginForm.username"></el-input>
             </el-form-item>
             <el-form-item label="密码" prop="password">
-              <el-input type="password" v-model="loginForm.password"></el-input>
+              <el-input v-model="loginForm.password" type="password"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="handleLogin">登录</el-button>
@@ -17,12 +17,12 @@
           </el-form>
         </el-tab-pane>
         <el-tab-pane label="注册" name="register">
-          <el-form ref="registerForm" :model="registerForm" label-width="80px" class="auth-form">
+          <el-form ref="registerForm" :model="registerForm" class="auth-form" label-width="80px">
             <el-form-item label="用户名" prop="username">
               <el-input v-model="registerForm.username"></el-input>
             </el-form-item>
             <el-form-item label="密码" prop="password">
-              <el-input type="password" v-model="registerForm.password"></el-input>
+              <el-input v-model="registerForm.password" type="password"></el-input>
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="handleRegister">注册</el-button>
@@ -37,7 +37,8 @@
 <script setup>
 import {useUserStore} from "../stores/user.js";
 import {ref} from 'vue'
-import { useRouter } from 'vue-router'
+import {useRouter} from 'vue-router'
+
 const user = useUserStore()
 const router = useRouter()
 

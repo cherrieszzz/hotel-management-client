@@ -2,14 +2,12 @@
   <div class="hotel-detail">
     <el-row justify="space-between">
       <el-col :span="14">
-
         <!-- 酒店图片 -->
         <el-image
             class="hotel-image"
             src="https://via.placeholder.com/520x300"
             fit="cover"
         ></el-image>
-
         <!-- 酒店信息 -->
         <div class="hotel-info">
           <h2 class="hotel-name">{{ hotel.name }}</h2>
@@ -25,7 +23,6 @@
               <el-button type="primary">点击预定</el-button>
             </el-col>
           </el-row>
-
         </div>
       </el-col>
 

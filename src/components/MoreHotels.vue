@@ -16,11 +16,11 @@ export default {
 
         </div>
       </template>
-      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
-      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
-      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
-      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
-      <MoreHotelCard title="fuckHotel" img="https://via.placeholder.com/100x50" url="/" />
+      <MoreHotelCard img="https://via.placeholder.com/100x50" title="fuckHotel" url="/"/>
+      <MoreHotelCard img="https://via.placeholder.com/100x50" title="fuckHotel" url="/"/>
+      <MoreHotelCard img="https://via.placeholder.com/100x50" title="fuckHotel" url="/"/>
+      <MoreHotelCard img="https://via.placeholder.com/100x50" title="fuckHotel" url="/"/>
+      <MoreHotelCard img="https://via.placeholder.com/100x50" title="fuckHotel" url="/"/>
 
       <div>...</div>
     </el-card>

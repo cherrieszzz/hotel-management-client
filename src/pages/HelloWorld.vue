@@ -4,11 +4,10 @@ import {
   Edit,
   Search,
 } from "@element-plus/icons-vue";
-
 import { useCounterStore } from '../stores/counter.js'
+
 const counter = useCounterStore()
 const value1 = ref('')
-
 </script>
 
 <template>

@@ -4,7 +4,6 @@ import ElementPlus from "element-plus";
 import "./style.css";
 import "element-plus/dist/index.css";
 import { createRouter, createWebHashHistory } from "vue-router"; // 修改导入语句
-import About from "./pages/About.vue";
 import HelloWorld from "./pages/HelloWorld.vue";
 import Booking from './pages/Booking.vue';
 import Sign from './pages/Sign.vue';
